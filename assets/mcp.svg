@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="470" viewBox="0 0 560 470" role="img" aria-labelledby="title desc">
+  <title id="title">AI-assisted analysis tooling</title>
+  <desc id="desc">An AI assistant talks to one MCP server, which drives IDA Pro, Ghidra, x64dbg, Cheat Engine, ReClass.NET, Wireshark, Fiddler and HTTP Debugger.</desc>
+  <style>
+    .big{font:800 26px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#f1f5f9}
+    .sub{font:500 17px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#a3afc2}
+    .tool{font:700 19px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#e6edf3}
+    .flow{fill:none;stroke-width:3;stroke-dasharray:7 7;animation:flow 1.4s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-28}}
+    .pulse{animation:pulse 2.6s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.5}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0f1f"/><stop offset="1" stop-color="#121735"/></linearGradient>
+    <linearGradient id="srv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#14b8a6"/></linearGradient>
+    <clipPath id="frame"><rect width="560" height="470" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="560" height="470" fill="url(#bg)"/>
+    <path class="flow" d="M280 98 V124" stroke="#d97757"/>
+    <path class="flow" d="M280 214 V248" stroke="#14b8a6"/>
+    <g transform="translate(130 24)">
+      <rect width="300" height="74" rx="16" fill="#d97757" fill-opacity=".14" stroke="#d97757" stroke-opacity=".75"/>
+      <text class="big" x="150" y="36" text-anchor="middle">AI assistant</text>
+      <text class="sub" x="150" y="60" text-anchor="middle">asks · reads · decides</text>
+    </g>
+    <g transform="translate(110 124)">
+      <rect class="pulse" width="340" height="90" rx="18" fill="url(#srv)" fill-opacity=".2"/>
+      <rect width="340" height="90" rx="18" fill="none" stroke="url(#srv)" stroke-width="2.5"/>
+      <text class="big" x="170" y="42" text-anchor="middle">MCP server</text>
+      <text class="sub" x="170" y="68" text-anchor="middle">one consistent tool interface</text>
+    </g>
+    <g transform="translate(30 268)"><rect width="242" height="38" rx="12" fill="#f59e0b" fill-opacity=".13" stroke="#f59e0b" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#f59e0b"/><text class="tool" x="36" y="26">IDA Pro</text></g>
+    <g transform="translate(288 268)"><rect width="242" height="38" rx="12" fill="#f87171" fill-opacity=".13" stroke="#f87171" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#f87171"/><text class="tool" x="36" y="26">Ghidra</text></g>
+    <g transform="translate(30 316)"><rect width="242" height="38" rx="12" fill="#60a5fa" fill-opacity=".13" stroke="#60a5fa" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#60a5fa"/><text class="tool" x="36" y="26">x64dbg</text></g>
+    <g transform="translate(288 316)"><rect width="242" height="38" rx="12" fill="#22c55e" fill-opacity=".13" stroke="#22c55e" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#22c55e"/><text class="tool" x="36" y="26">Cheat Engine</text></g>
+    <g transform="translate(30 364)"><rect width="242" height="38" rx="12" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#a78bfa"/><text class="tool" x="36" y="26">ReClass.NET</text></g>
+    <g transform="translate(288 364)"><rect width="242" height="38" rx="12" fill="#38bdf8" fill-opacity=".13" stroke="#38bdf8" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#38bdf8"/><text class="tool" x="36" y="26">Wireshark</text></g>
+    <g transform="translate(30 412)"><rect width="242" height="38" rx="12" fill="#6dd0f7" fill-opacity=".13" stroke="#6dd0f7" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#6dd0f7"/><text class="tool" x="36" y="26">Fiddler</text></g>
+    <g transform="translate(288 412)"><rect width="242" height="38" rx="12" fill="#f472b6" fill-opacity=".13" stroke="#f472b6" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#f472b6"/><text class="tool" x="36" y="26">HTTP Debugger</text></g>
+  </g>
+  <rect x=".75" y=".75" width="558.5" height="468.5" rx="18" fill="none" stroke="#232c46" stroke-width="1.5"/>
+</svg>
