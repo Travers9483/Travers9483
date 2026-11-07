@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-labelledby="title">
+  <title id="title">Thanks for stopping by</title>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+    .big{font-size:30px;font-weight:700}
+    .small{font-size:13px;font-weight:600;letter-spacing:5px;fill:#94a3b8}
+    .b1{animation:d1 14s ease-in-out infinite alternate}
+    .b2{animation:d2 17s ease-in-out infinite alternate}
+    @keyframes d1{to{transform:translate(220px,10px)}}
+    @keyframes d2{to{transform:translate(-240px,-10px)}}
+    .w1{animation:sea 12s linear infinite}
+    @keyframes sea{to{transform:translateX(-1200px)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/><stop offset="1" stop-color="#161a38"/>
+    </linearGradient>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="420" y1="0" x2="780" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+      <animate attributeName="x1" values="420;620;420" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="780;980;780" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".25" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#ec4899"/>
+      <stop offset=".75" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="soft" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1800" height="720">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="120" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="120" fill="url(#bg)"/>
+    <g filter="url(#soft)" opacity=".55">
+      <circle class="b1" cx="260" cy="60" r="90" fill="#7c3aed"/>
+      <circle class="b2" cx="940" cy="60" r="90" fill="#db2777"/>
+    </g>
+    <path class="w1" fill="url(#sea)" fill-opacity=".22" d="M0 0 V14 Q60 26 120 14 T240 14 T360 14 T480 14 T600 14 T720 14 T840 14 T960 14 T1080 14 T1200 14 T1320 14 T1440 14 T1560 14 T1680 14 T1800 14 T1920 14 T2040 14 T2160 14 T2280 14 T2400 14 V0Z"/>
+    <g class="sans" text-anchor="middle">
+      <text class="big" x="600" y="70" fill="url(#ink)">Thanks for stopping by</text>
+      <text class="small" x="603" y="98">HAVE A GREAT DAY</text>
+    </g>
+  </g>
+</svg>

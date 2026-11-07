@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I’m Travers</title>
+  <desc id="desc">Developer working on graphics and game tech, web apps, Microsoft 365 and tooling.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+    .kicker{font-size:15px;font-weight:600;letter-spacing:6px;fill:#67e8f9}
+    .name{font-size:80px;font-weight:800}
+    .tag{font-size:26px;font-weight:500;fill:#cbd5e1;opacity:0;animation:cycle 12s infinite}
+    .t2{animation-delay:3s}.t3{animation-delay:6s}.t4{animation-delay:9s}
+    @keyframes cycle{0%{opacity:0;transform:translateY(10px)}5%{opacity:1;transform:translateY(0)}21%{opacity:1;transform:translateY(0)}25%{opacity:0;transform:translateY(-10px)}100%{opacity:0}}
+    .b1{animation:d1 15s ease-in-out infinite alternate}
+    .b2{animation:d2 18s ease-in-out infinite alternate}
+    .b3{animation:d3 13s ease-in-out infinite alternate}
+    .b4{animation:d4 20s ease-in-out infinite alternate}
+    @keyframes d1{to{transform:translate(170px,50px)}}
+    @keyframes d2{to{transform:translate(-190px,40px)}}
+    @keyframes d3{to{transform:translate(150px,-40px)}}
+    @keyframes d4{to{transform:translate(-130px,-40px)}}
+    .w1{animation:sea 11s linear infinite}
+    .w2{animation:sea 17s linear infinite}
+    @keyframes sea{to{transform:translateX(-1200px)}}
+    .rise{animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.t1{opacity:1}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/><stop offset="1" stop-color="#161a38"/>
+    </linearGradient>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="260" y1="0" x2="940" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+      <animate attributeName="x1" values="260;660;260" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="940;1340;940" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".25" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#ec4899"/>
+      <stop offset=".75" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="soft" filterUnits="userSpaceOnUse" x="-300" y="-300" width="1800" height="920">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <g filter="url(#soft)" opacity=".62">
+      <circle class="b1" cx="170" cy="70" r="130" fill="#7c3aed"/>
+      <circle class="b2" cx="1040" cy="80" r="140" fill="#db2777"/>
+      <circle class="b3" cx="560" cy="340" r="150" fill="#0891b2"/>
+      <circle class="b4" cx="1120" cy="300" r="100" fill="#d97706"/>
+    </g>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <g class="sans rise" text-anchor="middle">
+      <text class="kicker" x="603" y="90">DEVELOPER · AUSTRALIA</text>
+      <text class="name" x="600" y="172" fill="url(#ink)">Hi, I’m Travers</text>
+    </g>
+    <g class="sans" text-anchor="middle">
+      <text class="tag t1" x="600" y="230">Graphics and game tech in C++</text>
+      <text class="tag t2" x="600" y="230">Web apps for small businesses</text>
+      <text class="tag t3" x="600" y="230">Microsoft 365 solutions</text>
+      <text class="tag t4" x="600" y="230">Tools that automate the boring bits</text>
+    </g>
+    <path class="w2" fill="url(#sea)" fill-opacity=".16" d="M0 294 Q75 282 150 294 T300 294 T450 294 T600 294 T750 294 T900 294 T1050 294 T1200 294 T1350 294 T1500 294 T1650 294 T1800 294 T1950 294 T2100 294 T2250 294 T2400 294 V320 H0Z"/>
+    <path class="w1" fill="url(#sea)" fill-opacity=".28" d="M0 300 Q60 286 120 300 T240 300 T360 300 T480 300 T600 300 T720 300 T840 300 T960 300 T1080 300 T1200 300 T1320 300 T1440 300 T1560 300 T1680 300 T1800 300 T1920 300 T2040 300 T2160 300 T2280 300 T2400 300 V320 H0Z"/>
+  </g>
+</svg>
