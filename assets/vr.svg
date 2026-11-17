@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="470" viewBox="0 0 560 470" role="img" aria-labelledby="title desc">
+  <title id="title">NovaGui inside the headset</title>
+  <desc id="desc">The game renders the scene for both eyes. An OpenXR frame hook adds extra composition layers: the menu as a quad layer floating in the room, the overlay as a projection layer for each eye, and a wrist HUD as a quad layer on the controller. The VR compositor blends them in the headset.</desc>
+  <style>
+    .big{font:800 26px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#f1f5f9}
+    .sub{font:500 17px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#a3afc2}
+    .tool{font:700 19px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#e6edf3}
+    .flow{fill:none;stroke-width:3;stroke-dasharray:7 7;animation:flow 1.4s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-28}}
+    .pulse{animation:pulse 2.6s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.5}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0f1f"/><stop offset="1" stop-color="#121735"/></linearGradient>
+    <linearGradient id="hook" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+    <clipPath id="frame"><rect width="560" height="470" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="560" height="470" fill="url(#bg)"/>
+    <path class="flow" d="M280 96 V120" stroke="#60a5fa"/>
+    <path class="flow" d="M280 210 V250" stroke="#ec4899"/>
+    <path class="flow" d="M280 384 V410" stroke="#14b8a6"/>
+    <g transform="translate(120 22)">
+      <rect width="320" height="74" rx="16" fill="#60a5fa" fill-opacity=".14" stroke="#60a5fa" stroke-opacity=".75"/>
+      <text class="big" x="160" y="36" text-anchor="middle">Game</text>
+      <text class="sub" x="160" y="60" text-anchor="middle">renders the scene for both eyes</text>
+    </g>
+    <g transform="translate(100 120)">
+      <rect class="pulse" width="360" height="90" rx="18" fill="url(#hook)" fill-opacity=".2"/>
+      <rect width="360" height="90" rx="18" fill="none" stroke="url(#hook)" stroke-width="2.5"/>
+      <text class="big" x="180" y="42" text-anchor="middle">OpenXR frame hook</text>
+      <text class="sub" x="180" y="68" text-anchor="middle">adds extra composition layers</text>
+    </g>
+    <g transform="translate(30 250)"><rect width="500" height="38" rx="12" fill="#a78bfa" fill-opacity=".13" stroke="#a78bfa" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#a78bfa"/><text class="tool" x="36" y="26">Menu</text><text class="sub" x="484" y="25" text-anchor="end">quad layer floating in the room</text></g>
+    <g transform="translate(30 298)"><rect width="500" height="38" rx="12" fill="#22d3ee" fill-opacity=".13" stroke="#22d3ee" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#22d3ee"/><text class="tool" x="36" y="26">Overlay</text><text class="sub" x="484" y="25" text-anchor="end">projection layer for each eye</text></g>
+    <g transform="translate(30 346)"><rect width="500" height="38" rx="12" fill="#f472b6" fill-opacity=".13" stroke="#f472b6" stroke-opacity=".65"/><circle cx="20" cy="19" r="5.5" fill="#f472b6"/><text class="tool" x="36" y="26">Wrist HUD</text><text class="sub" x="484" y="25" text-anchor="end">quad layer on the controller</text></g>
+    <g transform="translate(30 410)">
+      <rect width="500" height="40" rx="12" fill="#14b8a6" fill-opacity=".14" stroke="#14b8a6" stroke-opacity=".75"/>
+      <text class="tool" x="250" y="27" text-anchor="middle">VR compositor blends them in the headset</text>
+    </g>
+  </g>
+  <rect x=".75" y=".75" width="558.5" height="468.5" rx="18" fill="none" stroke="#232c46" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="142" viewBox="0 0 880 142" role="img" aria-labelledby="title desc">
+  <title id="title">At a glance</title>
+  <desc id="desc">70+ repositories, mostly private. 50+ games on one shared menu. 5 render backends, one codebase. 9 engine families written up. 200+ MCP tools for AI assistants.</desc>
+  <style>
+    .n{font:800 34px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+    .l{font:500 14px 'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;fill:#a3afc2}
+    .c{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="s0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f43f5e"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+    <linearGradient id="s3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#ef4444"/></linearGradient>
+    <linearGradient id="s4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#14b8a6"/></linearGradient>
+  </defs>
+    <g transform="translate(10 10)"><g class="c" style="animation-delay:0.08s">
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="#0f1424" stroke="url(#s0)" stroke-width="1.5"/>
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="url(#s0)" fill-opacity=".07"/>
+      <text class="n" x="80" y="52" text-anchor="middle" fill="url(#s0)">70+</text>
+      <text class="l" x="80" y="80" text-anchor="middle">repositories,</text>
+      <text class="l" x="80" y="100" text-anchor="middle">mostly private</text>
+    </g></g>
+    <g transform="translate(185 10)"><g class="c" style="animation-delay:0.16s">
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="#0f1424" stroke="url(#s1)" stroke-width="1.5"/>
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="url(#s1)" fill-opacity=".07"/>
+      <text class="n" x="80" y="52" text-anchor="middle" fill="url(#s1)">50+</text>
+      <text class="l" x="80" y="80" text-anchor="middle">games on one</text>
+      <text class="l" x="80" y="100" text-anchor="middle">shared menu</text>
+    </g></g>
+    <g transform="translate(360 10)"><g class="c" style="animation-delay:0.24s">
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="#0f1424" stroke="url(#s2)" stroke-width="1.5"/>
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="url(#s2)" fill-opacity=".07"/>
+      <text class="n" x="80" y="52" text-anchor="middle" fill="url(#s2)">5</text>
+      <text class="l" x="80" y="80" text-anchor="middle">render backends,</text>
+      <text class="l" x="80" y="100" text-anchor="middle">one codebase</text>
+    </g></g>
+    <g transform="translate(535 10)"><g class="c" style="animation-delay:0.32s">
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="#0f1424" stroke="url(#s3)" stroke-width="1.5"/>
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="url(#s3)" fill-opacity=".07"/>
+      <text class="n" x="80" y="52" text-anchor="middle" fill="url(#s3)">9</text>
+      <text class="l" x="80" y="80" text-anchor="middle">engine families</text>
+      <text class="l" x="80" y="100" text-anchor="middle">written up</text>
+    </g></g>
+    <g transform="translate(710 10)"><g class="c" style="animation-delay:0.40s">
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="#0f1424" stroke="url(#s4)" stroke-width="1.5"/>
+      <rect x=".75" y=".75" width="158.5" height="120.5" rx="16" fill="url(#s4)" fill-opacity=".07"/>
+      <text class="n" x="80" y="52" text-anchor="middle" fill="url(#s4)">200+</text>
+      <text class="l" x="80" y="80" text-anchor="middle">MCP tools for</text>
+      <text class="l" x="80" y="100" text-anchor="middle">AI assistants</text>
+    </g></g>
+</svg>
